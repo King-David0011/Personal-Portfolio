@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KingDavid Madudili | Front-End Developer</title>
+  <meta name="description" content="Portfolio of KingDavid Madudili, a front-end developer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="icon" href="favicon.ico">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="orb orb-one" aria-hidden="true"></div>
+  <div class="orb orb-two" aria-hidden="true"></div>
+  <div class="progress" aria-hidden="true"></div>
+  <header class="top">
+    <a href="#home" class="logo"><span class="logo-mark" aria-hidden="true">KD</span>KingDavid</a>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+    <nav id="nav" aria-label="Main">
+      <span class="indicator" aria-hidden="true"></span>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a class="nav-cta" href="#contact">Let’s talk</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="hello">Hi, I’m</p>
+        <h1>KingDavid Madudili</h1>
+        <h2>Front-End Developer</h2>
+        <p class="typing" aria-hidden="true"><span id="typed"></span></p>
+        <p class="lead placeholder">I’m KingDavid, a front-end developer who loves bringing ideas to life in the browser. I build simple, useful tools that help people get everyday tasks done, and I’m growing my skills in AI engineering.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <a class="btn" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="photo"><img src="chisom.jpg" alt=""></div>
+    </section>
+
+    <section id="about">
+      <h2 class="title">About me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="placeholder">I got into coding after watching my brother write code. I loved the idea of bringing something to life, especially how animations work, and I haven’t stopped since.
+
+I enjoy building simple tools that help everyday people solve everyday problems, because that’s what the world really needs. My favorite project is PollyGlot. It started as a basic translator where you type a word and pick one of three languages. After a comment suggested I take it further, I turned it into a chatbot. It was pretty hard and I got stuck along the way, but I pushed through, and that’s why I’m proudest of it.
+
+Right now I’m focused on learning, growing my front-end skills, exploring AI engineering, and connecting with other developers. I’m open to an entry-level role or freelance work. Outside of code, I play competitive online video games, and who knows, maybe I’ll go pro one day.</p>
+        </div>
+        <div class="stack">
+          <h3>Skills</h3>
+          <ul id="skills" class="chips"></ul>
+          <h3>Tools</h3>
+          <ul id="tools" class="chips"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2 class="title">Experience</h2>
+      <article class="job">
+        <p class="job-date">Sep 2026 – Nov 2026</p>
+        <div>
+          <h3>SIWES Industrial Training</h3>
+          <p class="company">HiiT plc, Lagos</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="projects">
+      <h2 class="title">Projects</h2>
+      <div id="project-list" class="grid"></div>
+      <div class="more">
+        <button class="btn more-btn" id="moreBtn" aria-expanded="false" aria-controls="more-projects">See the rest of my projects</button>
+      </div>
+      <div id="more-projects" hidden>
+        <h3 class="more-title">More projects</h3>
+        <div id="more-list" class="grid"></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="title">Get in touch</h2>
+      <p>Have a project in mind, or just want to say hello? Send me a message and I’ll get back to you.</p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:kingmadudili07@gmail.com">Email me</a>
+        <a class="btn" href="https://www.linkedin.com/in/kingdavid-madudili-03b482373" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/King-David0011" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> KingDavid Madudili</footer>
+
+  <script src="data.js"></script>
+  <script src="index.js"></script>
+</body>
+</html>
